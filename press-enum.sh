@@ -1,5 +1,27 @@
 #! /bin/bash
- 
+
+figlet -f standard Press-Enum
+
+echo ''
+echo '**********************************************************************************************************************************'
+echo "*                                                                                                                                *"
+echo "* Author: Kharim Mchatta                                                                                                         *"
+echo "*                                                                                                                                *"
+echo "* Tool-Name: Press - Enum                                                                                                        *"
+echo "*                                                                                                                                *"
+echo "* Version: 1.0                                                                                                                   *"
+echo "*                                                                                                                                *"
+echo "* Wpenum is a script that enumerates for usernames from  Wordpress site from the rest_api, rest_route's and RSS Feeds.           *"
+echo "*                                                                                                                                *"
+echo "* Disclaimer: the tool is not intended for malicious use, any malicious use of the tool shall not hold the author responsible.   *"
+echo "*                                                                                                                                *"
+echo "**********************************************************************************************************************************"
+
+echo ""
+echo ""
+echo ""
+echo ""
+
 read -p 'enter the website you want to scan: ' url
 
 echo ''
