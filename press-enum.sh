@@ -49,7 +49,7 @@ n=0
 
 while (($n<=200)) do
 
-curl -isL https://business-reporter.co.uk/?author=$n | grep "og:url" | grep -Eo "(https)://[a-zA-Z0-9./?=_%:-]*" | grep "author" | uniq
+curl -isL https://$url/?author=$n | grep "og:url" | grep -Eo "(https)://[a-zA-Z0-9./?=_%:-]*" | grep "author" | uniq
 
 ((n++))
 
