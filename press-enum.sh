@@ -11,7 +11,7 @@ echo "* Tool-Name: Press - Enum                                                 
 echo "*                                                                                                                                *"
 echo "* Version: 1.0                                                                                                                   *"
 echo "*                                                                                                                                *"
-echo "* Press-Enum is a script that enumerates for usernames from  Wordpress sites                                                         *"
+echo "* Press-Enum is a script that enumerates for usernames from  Wordpress sites                                                     *"
 echo "*                                                                                                                                *"
 echo "* Disclaimer: the tool is not intended for malicious use, any malicious use of the tool shall not hold the author responsible.   *"
 echo "*                                                                                                                                *"
