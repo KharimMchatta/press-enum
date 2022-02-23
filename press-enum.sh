@@ -11,7 +11,7 @@ echo "* Tool-Name: Press - Enum                                                 
 echo "*                                                                                                                                *"
 echo "* Version: 1.0                                                                                                                   *"
 echo "*                                                                                                                                *"
-echo "* Wpenum is a script that enumerates for usernames from  Wordpress sites                                                         *"
+echo "* Press-Enum is a script that enumerates for usernames from  Wordpress sites                                                         *"
 echo "*                                                                                                                                *"
 echo "* Disclaimer: the tool is not intended for malicious use, any malicious use of the tool shall not hold the author responsible.   *"
 echo "*                                                                                                                                *"
@@ -47,7 +47,7 @@ echo "----------- User enumeration via author archive ---------------"
 
 n=0
 
-while (($n<=200)) do
+while (($n<=50)) do
 
 curl -isL https://$url/?author=$n | grep "og:url" | grep -Eo "(https)://[a-zA-Z0-9./?=_%:-]*" | grep "author" | uniq
 
