@@ -68,4 +68,3 @@ echo ''
 echo "----------- Sitemap xml user url ----------------------------"
 
 curl -s https://$url/author-sitemap.xml | grep "<loc>" | awk -F"<loc>" '{print $2} ' | awk -F"</loc>" '{print $1}'
-
