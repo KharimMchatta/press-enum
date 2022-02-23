@@ -22,6 +22,7 @@ it looks for usernames in various places like
 ------------------- other information -------------------------------
 
 Note: when adding the site you want to scan for usernames dont add http or https just add the domain name example abc.com
+
 Disclaimer: any malicious use of the tool doesnt hold the author responsible, this tool should be used solely for educational and ethical purpose. 
 
 
