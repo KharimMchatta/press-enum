@@ -47,7 +47,9 @@ echo "----------- User enumeration via author archive ---------------"
 
 n=0
 
-while (($n<=50)) do
+while [ "$n" -le 50 ] 
+
+do
 
 curl -isL $url/?author=$n | grep "og:url" | grep -Eo "(https)://[a-zA-Z0-9./?=_%:-]*" | grep "author" | uniq
 
