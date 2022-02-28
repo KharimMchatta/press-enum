@@ -1,4 +1,7 @@
+------------- Update on February 28 2022 (2/28/2022) ------------------
+The tool was not handling error properly from the REST API but now it is already fixed
 
 
--------------- First Update --------
-There was an error on the author ID enumeration method which was fixed on February 27 2022 (2/27/2022)
+
+-------------- Update on February 27 2022 (2/27/2022) -----------------
+There was an error on the author ID enumeration method is already fixed
