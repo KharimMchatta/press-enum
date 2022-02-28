@@ -29,7 +29,26 @@ echo ''
 echo ''
 echo "----------- User enumeration via rest API ---------------------"
 
-curl -s $url/wp-json/wp/v2/users | jq -r 'map({id: .id, name: .name, slug: .slug})'
+code=$(curl --write-out %{http_code} -s --output /dev/null  $url/wp-json/wp/v2/users)
+ 
+if  [ "$code" -eq 200 ];
+ 
+then
+
+ curl -s $url/wp-json/wp/v2/users | jq -r 'map({id: .id, name: .name, slug: .slug})'
+
+
+ elif [ "$code" -eq 400 ];
+ 
+  then
+  echo ""
+
+  else
+
+  echo "Rest API is disabled, the site returned error code $code"
+
+fi
+
 
 
 echo ''
@@ -37,7 +56,26 @@ echo ''
 echo ''
 echo "----------- User enumeration via rest route -------------------"
 
-curl -s $url/?rest_route=/wp/v2/users | jq -r 'map({id: .id, name: .name, slug: .slug})'
+code=$(curl --write-out %{http_code} -s --output /dev/null  $url/wp-json/wp/v2/users)
+ 
+if  [ "$code" -eq 200 ];
+ 
+then
+
+ curl -s $url/?rest_route=/wp/v2/users | jq -r 'map({id: .id, name: .name, slug: .slug})'
+
+
+ elif [ "$code" -eq 400 ];
+ 
+  then
+  echo ""
+
+  else
+
+  echo "Rest API is disabled, the site returned error code $code"
+
+fi
+
 
 
 echo ''
