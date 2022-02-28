@@ -44,7 +44,7 @@ then
   echo ""
 
   else
-
+  echo ""
   echo "Rest API is disabled, the site returned error code $code"
 
 fi
@@ -71,7 +71,7 @@ then
   echo ""
 
   else
-
+  echo ""
   echo "Rest API is disabled, the site returned error code $code"
 
 fi
