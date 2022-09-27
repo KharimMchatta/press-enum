@@ -9,7 +9,7 @@ echo "* Author: Kharim Mchatta                                                  
 echo "*                                                                                                                                *"
 echo "* Tool-Name: Press - Enum                                                                                                        *"
 echo "*                                                                                                                                *"
-echo "* Version: 1.0                                                                                                                   *"
+echo "* Version: 2.0                                                                                                                   *"
 echo "*                                                                                                                                *"
 echo "* Press-Enum is a script that enumerates for usernames from  Wordpress sites                                                     *"
 echo "*                                                                                                                                *"
