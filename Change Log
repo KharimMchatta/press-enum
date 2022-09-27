@@ -5,3 +5,7 @@ The tool was not handling error properly from the REST API but now it is already
 
 -------------- Update on February 27 2022 (2/27/2022) -----------------
 There was an error on the author ID enumeration method is already fixed
+
+
+-------------- Update on September 27 2022 (9/27/2022) -----------------
+We added the feature of searching for xmlrpc and if its not disabled then it will list the methods for you
