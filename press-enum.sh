@@ -108,3 +108,34 @@ echo ''
 echo "----------- Sitemap xml user url ----------------------------"
 
 curl -s $url/author-sitemap.xml | grep "<loc>" | awk -F"<loc>" '{print $2} ' | awk -F"</loc>" '{print $1}'
+
+echo ''
+echo ''
+echo ''
+echo "----------- XMLRPC STATUS ---------------------"
+
+code=$(curl --write-out %{http_code} -s --output /dev/null  $url/xmlrpc.php)
+ 
+if  [ "$code" -eq 405 ];
+ 
+then
+
+curl $url/xmlrpc.php
+
+echo ''
+echo ''
+echo ""
+echo "Starting XMLRP Method Listings"
+
+curl -X POST -d "<?xml version="1.0" encoding="utf-8"?><methodCall><methodName>system.listMethods</methodName><params></params></methodCall>" $url/xmlrpc.php
+
+ elif [ "$code" -eq 403 ];
+ 
+  then
+  echo ""
+
+  else
+  echo ""
+  echo "XMLRPC is disabled"
+
+fi
