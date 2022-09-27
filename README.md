@@ -21,6 +21,8 @@ it looks for usernames in various places like
     4. Feeds
      
     5. sitemap XML
+    
+    6. XMLRPC status and Listing methods
 
 ------------------- other information -------------------------------
 
