@@ -1,5 +1,5 @@
 # press-enum
-![](img/press-enum.png)
+![](img/press-enum-v2.png)
 
 
 ------------------ Requirements ------------------------------------
